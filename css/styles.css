@@ -1,0 +1,130 @@
+/*Estilos generales*/
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: "Open Sans", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*Variables*/
+:root {
+  /*Color palette*/
+  --black: #0d1326;
+  --deepBlue: #101630;
+  --white: #fdfdfd;
+  --whitegray: #adb2c5;
+  --gray: #868b97;
+  --skyBlue: #528dd9;
+  --sky: #53b5dd;
+  --blueViolet: #403bbf;
+  --lightBlueViolet: #4b5cbf;
+
+  /*Font sizes*/
+  --titulo1: 3.6rem;
+  --titulo2: 2.8rem;
+  --titulo3: 2rem;
+  --titulo4: 1.6rem;
+  --normal: 1.6rem;
+  --small: 1.4rem;
+  --smaller: 1.2rem;
+}
+
+/*Estilos hover*/
+a:hover{
+    text-decoration: underline;
+}
+
+/*---------------------------------------*/
+
+/*Estilos para el header*/
+body {
+  background-color: var(--deepBlue);
+}
+
+.header {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 16px; */
+  position: relative;
+}
+
+.header__nav {
+  background-image: linear-gradient(rgba(83, 182, 221, 0.9), rgb(75, 92, 191));
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__listItem {
+  padding: 3.2rem;
+}
+
+.header__listItem__link {
+  color: var(--white);
+  font-size: var(--titulo3);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.contentTitle {
+  width: 70vw;
+  height: auto;
+  margin-bottom: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentTitle__title {
+  color: var(--white);
+  font-size: var(--titulo2);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.cssExperiments,
+.jsExperiments {
+  width: 70vw;
+  height: auto;
+  margin-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cssExperiments__title,
+.jsExperiments__title {
+  color: var(--white);
+  margin-bottom: 4rem;
+  font-size: var(--titulo3);
+  letter-spacing: 1px;
+}
+
+.jsExperiments__listItem__link,
+.cssExperiments__listItem__link {
+  font-size: var(--normal);
+  font-weight: bold;
+  color: var(--sky);
+}
+
+
+
+
