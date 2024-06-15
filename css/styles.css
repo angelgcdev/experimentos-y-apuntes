@@ -45,8 +45,8 @@ a {
 }
 
 /*Estilos hover*/
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
 
 /*---------------------------------------*/
@@ -125,6 +125,7 @@ body {
   color: var(--sky);
 }
 
-
-
-
+.cssExperiments__listItem,
+.jsExperiments__listItem {
+  margin-bottom: 1.6rem;
+}
