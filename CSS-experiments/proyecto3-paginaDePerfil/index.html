@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de perfil</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <button class="menu__button" id="button-burger">
+          <img
+            class="menu__icon"
+            src="./assets/icons/burguer.svg"
+            alt="burger icon"
+          />
+        </button>
+        <button class="menu__button hidden" id="button-close">
+          <img
+            class="menu__icon"
+            src="./assets/icons/close.svg"
+            alt="menu icon"
+          />
+        </button>
+      </div>
+
+      <header class="header hidden">
+        <div class="header__container">
+          <img
+            class="header__logo"
+            src="./assets/img/logo1 (1).png"
+            alt="logo"
+          />
+        </div>
+
+        <nav class="nav">
+          <li class="nav__list">
+            <a class="nav__link" href="#">Home</a>
+          </li>
+          <li class="nav__list">
+            <a class="nav__link" href="#">About</a>
+          </li>
+          <li class="nav__list">
+            <a class="nav__link" href="#">Skills</a>
+          </li>
+          <li class="nav__list">
+            <a class="nav__link" href="#">Works</a>
+          </li>
+          <li class="nav__list">
+            <a class="nav__link" href="#">Contact</a>
+          </li>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="presentation">
+          <div class="presentation__text-container">
+            <p class="presentation__text">Hi,</p>
+
+            <p class="presentation__text roboto-bold">
+              I'am <span class="presentation__text--color">Marlon</span>
+            </p>
+
+            <p class="presentation__text">Web Designer</p>
+
+            <button class="presentation__button presentation__button--action">
+              Contact
+            </button>
+          </div>
+
+          <div class="presentation__image-container">
+            <img
+              class="presentation__image"
+              src="./assets/img/perfil.png"
+              alt="foto de perfil"
+            />
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="social-media__container">
+          <a class="social-media__link" href="#">
+            <img
+              class="social-media__icon"
+              src="./assets/icons/linkedin.png"
+              alt="linkedIn"
+            />
+          </a>
+          <a class="social-media__link" href="#">
+            <img
+              class="social-media__icon"
+              src="./assets/icons/facebook.png"
+              alt="facebook"
+            />
+          </a>
+          <a class="social-media__link" href="#">
+            <img
+              class="social-media__icon"
+              src="./assets/icons/github.png"
+              alt="GitHub"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
