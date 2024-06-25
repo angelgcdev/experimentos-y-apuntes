@@ -1,0 +1,111 @@
+/*Estilos generales*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.6rem;
+    margin: 0;
+    text-align: center;
+    background-color: var(--sand);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*Variables*/
+:root {
+  /*Color pallete*/
+  --black: #0d1326;
+  --white: #fdfdfd;
+  --whitegray: #adb2c5;
+  --gray: #868b97;
+  --wine: #402a2e;
+  --grape: #733c50;
+  --sand: #f2ebdc;
+  --gravel: #8c8281;
+  --lightGray: #d9d9d9;
+
+  /*Font sizes*/
+  --titulo1: 3.6rem;
+  --titulo2: 2.8rem;
+  --titulo3: 2rem;
+  --titulo4: 1.6rem;
+  --normal: 1.6rem;
+  --small: 1.4rem;
+  --smaller: 1.2rem;
+}
+
+/*Estilos para el header*/
+.header {
+  margin: 0 1.6rem;
+  display: grid;
+  grid-template-rows: 3fr minmax(100px, 400px) max-content auto 1fr;
+  justify-items: center;
+  height: 100vh;
+}
+
+.header__img{
+    grid-row: 2;
+    height: 100%;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  color: var(--wine);
+  line-height: 1.6;
+
+  grid-row: 3;
+}
+
+.nav {
+  grid-row: 4;
+}
+
+.nav__ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: var(--smaller);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  margin: 0.32rem 0;
+  text-align: center;
+}
+
+.nav__list {
+  float: left;
+  border-right: 1px solid var(--black);
+  padding: 0 2rem;
+  line-height: 1.6;
+  height: 1.2rem;
+  margin: 0.32rem 0;
+}
+
+.nav__list:last-child {
+  border-right: none;
+}
+
+.nav__link {
+  display: block;
+  color: var(--grape);
+}
+
+.nav__link:hover {
+  color: var(--gravel);
+}
